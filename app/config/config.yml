@@ -148,3 +148,12 @@ ewz_recaptcha:
     public_key:  "%recaptcha_public%"
     private_key: "%recaptcha_private%"
 
+# File upload
+oneup_uploader:
+    mappings:
+        files:
+            frontend: blueimp
+            namer: base.user.namer
+            storage:
+                type: filesystem
+                directory: %kernel.root_dir%/upload/
